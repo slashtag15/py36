@@ -56,6 +56,11 @@ while not don:
     scr.blit(fir,(xx,yy))
     showtxt(f"score:{sor}",10,10)
     showtxt(f"lives:{lif}",10,50)
+    if lif==0:
+        showtxt("you lost",400,200,"#FF6D00")
+        pyg.display.update()
+        pyg.time.delay(5151)
+        pyg.quit()
     if win:
         showtxt("you win",400,200,"#FF6D00")
         pyg.display.update()
